@@ -1,0 +1,53 @@
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/calories.css">
+</head>
+
+<body>
+	<h1>Calorie Calculator</h1>
+	<div class="container text-center" id="question1">
+		<div class="form-group">
+		<p>What is your weight in kilograms?</p>
+		<input type="number" id="weight" name="weight" required>
+		<button type="button" onclick="showQuestion2()">Next</button>
+	    </div>
+	</div>
+	<div class="container form-group text-center hidden" id="question2" style="display: none;">
+		<p>What is your age?</p>
+		<input type="number" id="age" name="age" required>
+		<button type="button" class="btn" onclick="showQuestion3()">Next</button>
+	</div>
+	<div class="container form-group text-center hidden" id="question3" style="display: none;">
+		<p>What is your sex?</p>
+		<select id="sex" name="sex" required>
+			<option value="">-- Please select --</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+		<button type="button" class="btn" onclick="showQuestion4()">Next</button>
+	</div>
+	<div class="container form-group text-center hidden" id="question4" style="display: none;">
+		<p>How active are you on a typical day?</p>
+		<select id="activity" name="activity" required>
+			<option value="">-- Please select --</option>
+			<option value="0">Sedentary (little or no exercise)</option>
+			<option value="1">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+			<option value="2">Active (hard exercise/sports 6-7 days/week)</option>
+		</select>
+		<p>What diet do you want to follow?</p>
+		<select id="diet" name="diet" required>
+			<option value="">-- Please select --</option>
+			<option value="Aggressive">Aggressive (reduce calorie intake by 800)</option>
+			<option value="Moderate">Moderate (reduce calorie intake by 500)</option>
+			<option value="Slow">Slow (reduce calorie intake by 300)</option>
+			<option value="Weight Maintenance">Weight Maintenance (no adjustment)</option>
+		</select>
+		<button type="button" class="btn" onclick="calculateCalories()">Calculate</button>
+	</div>
+	<div class="container result hidden" id="result"></div>
+	<button class="result hidden" id="result2" onclick="location.href = 'remaining'">Next</button>
+</body>
+
+<script src="/scripts/calories.js"></script>

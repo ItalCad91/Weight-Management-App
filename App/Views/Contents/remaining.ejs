@@ -1,0 +1,21 @@
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="/css/remaining.css">
+</head>
+<body>
+	<h1>Calories Tracker</h1>
+	<p>Based on the selected weight management plan, you should consume <span id="calories"></span> calories per day.</p>
+	<p>You have <span id="remaining-calories"></span> calories remaining for the day.</p>
+	<!-- <p1 style="margin-left: 345px ;">Use the table below to update your calories intake 📝</p1> -->
+	<h2 class="container">Use the table below to update your calories intake 📝</h2>
+	<div class="container">
+		<label for="item-name">Food Item Consumed:</label>
+		<input type="text" id="item-name">
+		<label for="calories-consumed">Calories:</label>
+		<input type="number" id="calories-consumed">
+		<button onclick="subtractCalories()">Add</button>
+	</div>
+</body>
+
+<script src="/scripts/remaining.js"></script>
