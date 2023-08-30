@@ -18,3 +18,8 @@ export function displayLoginPage(req, res, next)
 {
     res.render('index', {title : 'Weight Management App Login', page:'login'}); // RENDERS IN THE EJS TEMPLATE CALLED INDEX
 };
+
+export function displayDownloadPage(req, res, next) 
+{
+    res.render('index', {title : 'Weight Management App Download', page:'download'}); // RENDERS IN THE EJS TEMPLATE CALLED INDEX
+};

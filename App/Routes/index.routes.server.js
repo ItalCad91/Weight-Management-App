@@ -1,4 +1,4 @@
-import {displayHomePage, displayCaloriesPage, displayRemainingPage, displayLoginPage} from '../Controllers/index.controllers.server.js'
+import {displayHomePage, displayCaloriesPage, displayRemainingPage, displayLoginPage, displayDownloadPage} from '../Controllers/index.controllers.server.js'
 import { Router } from "express";
 
 
@@ -9,6 +9,7 @@ router.get('/', displayHomePage);
 router.get('/calories', displayCaloriesPage);
 router.get('/remaining', displayRemainingPage);
 router.get('/login', displayLoginPage);
+router.get('/download', displayDownloadPage);
 
 
 
